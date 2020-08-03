@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MathScreenController">
+   <top>
+      <Label fx:id="mathTypeLabel" text="Solve the operation" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </top>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <bottom>
+      <HBox prefHeight="125.0" prefWidth="550.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="70.0" prefWidth="38.0">
+               <children>
+                  <Label layoutX="-1.0" layoutY="5.0" text="=">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="70.0" prefWidth="180.0">
+               <children>
+                  <TextField fx:id="userInput" layoutX="3.0" layoutY="20.0" onAction="#onEnter" prefHeight="44.0" prefWidth="196.0" promptText="answer">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="87.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="correctCounter" layoutY="34.0" text="Correct:  ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="incorrectCounter" layoutY="67.0" text="Incorrect: ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="result" text="Press Enter">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="num1" alignment="CENTER" layoutX="81.0" layoutY="65.0" prefWidth="60.0" text="N1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="operation" alignment="CENTER" layoutX="49.0" layoutY="65.0" text="O">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="190.0" prefWidth="216.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="num2" alignment="CENTER" layoutX="78.0" layoutY="65.0" text="N2">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

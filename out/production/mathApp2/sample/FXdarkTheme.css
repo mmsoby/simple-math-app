@@ -1,0 +1,38 @@
+.root{
+    -fx-background-color: #333333;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-size:20px;
+}
+
+.choice-box{
+    -fx-background-color:black;
+    -fx-mark-color:orange;
+    -fx-background-radius:10;
+    -fx-text-fill:#2196F0;
+}
+/* Select Math type choice box color scheme*/
+.choice-box > .label {
+-fx-text-fill: white;
+-fx-background-color:black;
+}
+
+.choice-box .context-menu { -fx-background-color: black; }
+
+.choice-box .menu-item:focused { -fx-background-color: orange; }
+
+.choice-box .menu-item > .label { -fx-text-fill: white; }
+
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }
+
+
+/* Submit Button Front Page color scheme*/
+#startButton{
+    -fx-background-color:#2196F0;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius:10;
+}
+
+
+.label{
+    -fx-text-fill:#FFFFFF;
+}
